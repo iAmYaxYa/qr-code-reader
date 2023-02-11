@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?&family=Poppins:wght@300;400;500;600;900');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #007bff !important;
+}
+.qr-code{
+    width: 400px;
+    max-height: 430px;
+    background-color: #fff;
+}
+/* .img{
+    position: absolute;
+    width: 87%;
+} */
+img{
+    width: 150px;
+}
+.select{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 200px;
+    border: 2px dashed rgba(0,0,0,0.3);
+    flex-direction: column;
+    transition: all .4s ease;
+}
+.select.hide{
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+}
+.select p{
+    width: 100%;
+    cursor: pointer;
+    font-size: 25px;
+    color: #007bff;
+    text-align: center;
+    font-weight: 500;
+}
+.select .info.error{
+    color: red;
+    font-size: 18px;
+}
+.select .info.scan{
+    color: rgb(13, 162, 85);
+    font-size: 25px;
+}
+.select i{
+    font-size: 30px;
+    color: #007bff;
+}
+.select .error{
+    color: red;
+}
+.select .scan{
+    color: rgb(13, 162, 85);
+}
+.select.disabled{
+    pointer-events: none;
+}
+.result{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    cursor: pointer;
+    max-height: 400px;
+    flex-direction: column;
+    display: none;
+    opacity: 0;
+    transform: scale(0.9);
+    pointer-events: none;
+    transition: transform .4s ease;
+}
+.result.show{
+    display: block;
+    display: flex;
+    opacity: 1;
+    transform: scale(1);
+    pointer-events: auto;
+}
+.result textarea{
+    width: 100%;
+    border: 1px solid rgba(0,0,0,0.3);
+    height: 100px;
+    outline: none;
+    overflow-y: auto;
+    padding: 10px;
+    resize: none;
+}
+.result textarea::-webkit-scrollbar{
+    width: 7px;
+}
+.result textarea::-webkit-scrollbar-thumb{
+    background-color: #fff;
+}
+.result textarea::-webkit-scrollbar-track{
+    border-radius: 6px;
+    border: #007bff;
+}
