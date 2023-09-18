@@ -8,7 +8,7 @@ let selectBox = document.querySelector(".select"),
     btnAgain = result.querySelector(".again");
 
 
-let url = `http://api.qrserver.com/v1/read-qr-code/`;
+let url = `https://api.qrserver.com/v1/read-qr-code/`;
 function fetchData(formdata, file){
     fetch(url,{
         method: "post",
